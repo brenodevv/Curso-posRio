@@ -1,0 +1,26 @@
+<script>
+  
+    let idade = 32;
+    let sexo = "feminino";
+    let condicaoEspecial = "gestante";
+  
+    if (sexo == "masculino") {
+      if (idade >= 60 || condicaoEspecial == "deficiente físico") {
+        console.log("Fila Preferencial");
+      } else {
+        console.log("Fila Comum");
+      }
+    } else if (sexo == "feminino") {
+      if (
+        idade >= 60 ||
+        condicaoEspecial == "deficiente físico" ||
+        condicaoEspecial == "gestante"
+      ) {
+        console.log("Fila Preferencial");
+      } else {
+        console.log("Fila Comum");
+      }
+    } else {
+      console.log("Erro");
+    }
+  </script>

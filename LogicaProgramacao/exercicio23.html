@@ -1,0 +1,50 @@
+<script>
+    // data informada pelo usuário
+    let data = prompt("Informe a data:");
+    // split para dividir a data e transformar em um array
+    let listaData = data.split("/");
+    console.log(listaData)
+    let escreverData = listaData[0] + ' de ' +  mes(listaData) + ' de ' + listaData[2];
+    document.write(escreverData);
+// casos
+    function mes(array) {
+        switch (array[1]) {
+            case "01":
+                return "janeiro";
+                break;
+            case "02":
+                return "fevereiro";
+                break;
+            case "03":
+                return "março";
+                break;
+            case "04":
+                return "abril";
+                break;
+            case "05":
+                return "maio";
+                break;
+            case "06":
+                return "junho";
+                break;
+            case "07":
+                return "julho";
+                break;
+            case "08":
+                return "agosto";
+                break;
+            case "09":
+                return "setembro";
+                break;
+            case "10":
+                return "outubro";
+                break;
+            case "11":
+                return "novembro";
+                break;
+            case "12":
+                return "dezembro";
+                break;
+        }
+    }
+</script>

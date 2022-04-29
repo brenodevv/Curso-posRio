@@ -1,0 +1,21 @@
+<script>
+
+    // enquanto o número for divisivel por dois, menos ou igual ao limite soma um no número
+    function verificarPrimo(limitedigito) {
+        for (let numero = 2; numero <= limitedigito; numero++) {
+            let primo = true;
+            // ignora o 1 e o próprio número parar ver se ele é divisivel por algum outro
+            for (let divisor = 2; divisor <= numero; divisor++) {
+                if (numero % divisor === 0) {
+                    primo = false;
+                    break
+                }
+            }
+            if (primo) console.log(numero);
+        }
+
+    }
+    verificarPrimo(7)
+// TERINARRRRRRRRRRR
+
+</script>

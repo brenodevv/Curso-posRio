@@ -1,0 +1,12 @@
+<script>
+    function calculaImposto(valor, taxaImposto){
+        calculo = valor * taxaImposto / 100
+        imp = calculo + valor
+        console.log(imp)
+    }
+  
+  let valor = parseFloat(prompt('Digite o valor : '))
+  let taxaImposto =parseFloat(prompt('Digite a taxa de imposto : '))
+  calculaImposto(valor, taxaImposto)
+
+</script>
