@@ -1,14 +1,14 @@
+<!-- 19.	Faça um programa, com uma função que necessite de um argumento. A função retorna o valor de caractere ‘P’, se seu argumento for positivo, e ‘N’, se seu argumento for zero ou negativo -->
 <script>
+    let numero = parseFloat(prompt('Digite um número'))
 
-false = 'P'
-true = 'F'
-function identificar(valor){
-    if(valor <= 0){
-        return console.log(false)
-    }else{
-        console.log(true)
+    function verificar(numero) {
+        if (numero > 0) {
+            return 'P'
+        } else if (numero <= 0) {
+            return 'F'
+        }
     }
-}
-let valor = parseFloat(prompt('Digite um valor :'))
-identificar(valor)
+
+    console.log(verificar(numero))
 </script>

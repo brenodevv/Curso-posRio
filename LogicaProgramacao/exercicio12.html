@@ -1,14 +1,15 @@
+<!-- 13.	Escreva um programa para verificar se um caractere é uma vogal ou consoante.  -->
 <script>
-    const vogal = [a, e, i, o, u]
-    const consoante = [b, c, d, f, g, h, j, k, l, m, n, p, q, r, s, t, v, x, y, w, z]
-
-    let caracter = prompt('Informe a letra desejada : ')
-    if (caracter == vogal) {
-        document.write('é uma vogal')
-    } else if (caracter == consoante) {
-        document.write('é ua consoante')
-    } else {
-        document.write('Digito não identificado ! ')
+    //LISTA DE VOGAL E CONSOANTE
+    let vogal = ['a', 'e', 'i', 'o', 'u']
+    let consoante = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'x', 'y', 'w', 'z']
+    // O usuário informa a letre desejada 
+    let caracter = prompt('Digite uma letra')
+    // O includes serve para verificar se contém o elemento dentro do array
+    if(vogal.includes(caracter) ==true){
+        console.log(`${caracter} é uma vogal`)
+    }else if(caracter.includes(caracter)== true){
+        console.log(`${caracter} é uma consoante`)
     }
 
 
